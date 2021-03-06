@@ -1,0 +1,31 @@
+Body {
+    display: grid;
+    border: 3px solid black;
+    margin: 0px;
+    max-height: 100vh;
+    grid-column: 100;
+    grid-template-columns: 50px 5fr;
+    grid-template-rows: 50px calc(100vh - 106px) 50px;
+    Grid-template-areas: "banner banner"
+      "navbar body"
+      "footer footer";
+}
+.banner {
+    border: 1px solid blue;
+    display: flex;
+}
+
+footer {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.navbar {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.body {
+    border: 1px solid blue;
+    display: flex;
+}
