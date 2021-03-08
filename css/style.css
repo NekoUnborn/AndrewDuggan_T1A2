@@ -1,31 +1,63 @@
 Body {
-    display: grid;
     border: 3px solid black;
     margin: 0px;
     max-height: 100vh;
-    grid-column: 100;
-    grid-template-columns: 50px 5fr;
-    grid-template-rows: 50px calc(100vh - 106px) 50px;
-    Grid-template-areas: "banner banner"
-      "navbar body"
-      "footer footer";
-}
-.banner {
-    border: 1px solid blue;
-    display: flex;
 }
 
 footer {
     border: 1px solid blue;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
-    border: 1px solid blue;
+    background-color: white;
+    padding: 0;
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0;
+}
+
+.navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+    display: inline-block;
+    margin-right: -6px;
+    width: 140.7px;
+    color: black;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    background-color: red;
+}
+
+.navbar li.active>a {
+    text-decoration: underline;
+    background-color: red;
+    color: blue;
 }
 
 .body {
     border: 1px solid blue;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#myimage {
+    width: 200px;
 }
