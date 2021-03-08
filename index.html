@@ -10,14 +10,30 @@
 </head>
 
 <body>
-    <section>
-        <ul class="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="myblog.html">My Blogs</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </section>
+    <!-- the header will contain the bars icon for the extended navbar until the javascript can be added -->
+    <header>
+        <section class="Menubars">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+        </section>
+        <section>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="myblog.html">My Blogs</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </section>
+    </header>
     <section class="body">
         <p>A wonderful picture of me</p>
         <img id="myimage" src="./images/AndrewDuggan_image.jpg" alt="Photo of Andrew Duggan" width="300px" height="100%"
