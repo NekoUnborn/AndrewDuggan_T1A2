@@ -1,90 +1,131 @@
-Body {
-    border: 3px solid black;
-    margin: 0px;
-    max-height: 100vh;
+/* @import "https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" */
+
+@keyframes hovering {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+* {
+  margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-row: auto;
+    grid-template-rows: ".header"
+    ".main"
+    ".footer";
+  margin: 0px;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "menubars navbar";
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas: "menubars navbar";
+  height: 40px;
+  background-color: red;
 }
 
 footer {
-    border: 1px solid blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* This script creates the menu icon */
+#menubars {
+  display: inline-block;
+  cursor: pointer;
 }
 
+#menubars div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* This code turns the menu icon 90deg when in preparation for javascript */
+#menubars:hover {
+  animation: menu 1s;
+  animation-fill-mode: forwards;
+}
 .navbar {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
 }
 
 .navbar li {
-    display: inline;
-    list-style: none;
+  display: inline;
+  list-style: none;
 }
 
 /* This is to turn the navbar link Blood Red on the page has been visited */
 .navbar li a:link,
 .navbar li a:visited {
-    display: inline-block;
-    margin-right: 2;
-    padding: .3em;
-    width: 140.7px;
-    color: rgb(50, 0, 0);
-    font-family: fantasy;
-    text-align: center;
-    text-decoration: none;
-    background-color: red;
+  color: rgb(100, 0, 0);
+  text-decoration: none;
+}
+.navbar li a:hover {
+  animation: hovering linear 0.5s infinite;
 }
 
-/* Enlarges the active page text */
-.navbar .active {
-    font-size: 150%;
+/* Enlarges the active page text in the navbar*/
+.active {
+  font-size: 150%;
+  color: black;
 }
 
-.body {
-    border: 1px solid blue;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.main {
+  display: flex;
+  height: calc(100vh - 80px);
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+#intro {
+  font-family: "Akaya Telivigala", cursive;
+}
+#myimagebackground {
 
-/* This script creates the menu icon */
-.container {
-    display: inline-block;
-    cursor: pointer;
+    position:absolute;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  opacity: 30%;
+  justify-self: center;
 }
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: red;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-/* This code turns the menu icon 90deg when clicked */
-.change .bar1 {
-    transform: rotate(90deg) translate(11px, 11px);
-}
-
-.change .bar2 {
-    transform: rotate(90deg);
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    transform: rotate(90deg) translate(-11px, -11px);
-}
-
 #myimage {
-    width: 200px;
+    justify-self: center;
+  }
+.logo:hover {
+  animation: hovering linear 2s infinite;
 }
