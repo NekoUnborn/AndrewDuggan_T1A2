@@ -1,36 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrew's Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!-- the header will contain the bars icon for the extended navbar until the javascript can be added -->
     <header>
-      <article>
-        <div id="menubars">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </article>
+      <div id="menubars">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav>
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a class="active" href="myblog.html">My Blogs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" aria-label="Homepage">Home</a></li>
+          <li>
+            <a href="aboutme.html" aria-label="Page About Me">About Me</a>
+          </li>
+          <li>
+            <a class="active" href="myblog.html" aria-label="This Page"
+              >My Blogs</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" aria-label="My Contact Page">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="main">
-
+    <!-- the whole Main Body section is full VH flexbox -->
+    <section class="main" id="blogpage">
+      <!-- Each subsection has its own flexbox for ease of movement -->
+      <article>
+        <h2>External Blogs</h2>
+        <a
+          href="https://www.linkedin.com/in/andrewduggan42"
+          aria-label="External Blog 01 Jan 21"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p>External Blog 01 Jan 21</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/andrewduggan42"
+          aria-label="External Blog 20 Feb 21"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p>External Blog 20 Feb 21</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/andrewduggan42"
+          aria-label="External Blog 06 Mar 21"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p>External Blog 06 Mar 21</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/andrewduggan42"
+          aria-label="Andrew on LinkedIn"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p>External Blog 11 Mar 21</p>
+        </a>
+      </article>
+      <!-- My Blogs in grid -->
+      <article id="myblogs">
+        <h2>Blog Space</h2>
+        <article class="blog">
+          <h2>Brian Melting</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <img src="./images/AndrewDuggan_image.jpg" alt="Blog Image 1" />
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </article>
+        <article class="blog">
+          <h2>Profile Page</h2>
+          <h4>Title description, Dec 7, 2017</h4>
+          <img src="./images/AndrewDuggan_image.jpg" alt="Blog Image 1" />
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </article>
+        <article class="blog">
+          <h2>First Assignment</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <img src="./images/AndrewDuggan_image.jpg" alt="Blog Image 1" />
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </article>
+        <article class="blog">
+          <h2>Starting off well</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <img src="./images/AndrewDuggan_image.jpg" alt="Blog Image 1" />
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </article>
+        <article class="blog">
+          <h2>Optimistic</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <img src="./images/AndrewDuggan_image.jpg" alt="Blog Image 1" />
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </article>
+      </article>
     </section>
     <footer>
-        <p>© 2021 Tickit Solutions Pty Ltd</p>
-      </footer>
-</body>
+      <p>© 2021 Tick It Business Solutions Pty Ltd</p>
+    </footer>
+  </body>
 </html>

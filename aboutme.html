@@ -1,41 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrew's Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!-- the header will contain the bars icon for the extended navbar until the javascript can be added -->
     <header>
-      <article>
-        <div id="menubars">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </article>
+      <div id="menubars">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav>
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="aboutme.html">About Me</a></li>
-          <li><a href="myblog.html">My Blogs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" aria-label="Homepage">Home</a></li>
+          <li>
+            <a class="active" href="aboutme.html" aria-label="This Page"
+              >About Me</a
+            >
+          </li>
+          <li><a href="myblog.html" aria-label="My Blog Page">My Blogs</a></li>
+          <li>
+            <a href="contact.html" aria-label="My Contact Page">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="main">
-      <h1>work</h1>
-      <p>22 years in the military has taught me resilience and the ability to work under pressure</p>
-      <p>I currently work for TickIt Solutions Pty Ltd as the IT manager</p>
+    <!-- the whole Main Body section is full VH flexbox -->
+    <section class="main" id="aboutme">
+      <!-- Each subsection has its own flexbox for ease of movement -->
+      <article>
+        <h2>Work</h2>
+        <div class="boxed">
+          <p>
+            22 years in the military has taught me resilience and the ability to
+            work under pressure
+          </p>
+          <p>
+            I currently work for Tick It Business Solutions Pty Ltd as the IT
+            manager
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>Skills</h2>
+        <div id="skills" class="boxed">
+          <a
+            href="https://en.wikipedia.org/wiki/HTML5"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="./images/html5.png" alt="HTML5" />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/css"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="./images/css.png" alt="css" />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/Ruby_(programming_language)"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="./images/Ruby.png" alt="Ruby on Rails" />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/JavaScript"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="./images/JS.png" alt="JAVASCRIPT" />
+          </a>
+        </div>
+      </article>
+      <article>
+        <h2>Qualifications</h2>
+        <div class="boxed">
+          <p>Dip Information Technology</p>
+          <p>Cert IV Telecommunications</p>
+          <p>Cert IV Training and Assessment</p>
+        </div>
+      </article>
+
+      <article>
+        <h2>Current Projects</h2>
+        <div id="projects" class="boxed">
+          <figure>
+            <p>Respite with Linda</p>
+            <a
+              href="https://www.abc.net.au/news/2015-03-21/sergeant-andrew-duggan-good-to-know-public-supportive/6338038"
+              aria-label="Respite with Linda"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="https://live-production.wcms.abc-cdn.net.au/72718b0bb9337e567d4dac28a31a056e?impolicy=wcms_crop_resize&cropH=845&cropW=1500&xPos=0&yPos=72&width=862&height=485"
+                alt="Respite with Linda"
+              />
+            </a>
+          </figure>
+          <figure>
+            <p>Adapting Behavour</p>
+            <a
+              href="https://www.abc.net.au/news/2015-03-21/sergeant-andrew-duggan-good-to-know-public-supportive/6338038"
+              aria-label="Adapting Behavour Homepage"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="https://live-production.wcms.abc-cdn.net.au/72718b0bb9337e567d4dac28a31a056e?impolicy=wcms_crop_resize&cropH=845&cropW=1500&xPos=0&yPos=72&width=862&height=485"
+                alt="Adapting Behavour"
+              />
+            </a>
+          </figure>
+          <figure>
+            <p>Tick It Business Solutions</p>
+            <a
+              href="https://www.abc.net.au/news/2015-03-21/sergeant-andrew-duggan-good-to-know-public-supportive/6338038"
+              aria-label="Tick It Business Solutions Homepage"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="https://live-production.wcms.abc-cdn.net.au/72718b0bb9337e567d4dac28a31a056e?impolicy=wcms_crop_resize&cropH=845&cropW=1500&xPos=0&yPos=72&width=862&height=485"
+                alt="Tick It Business Solutions"
+              />
+            </a>
+          </figure>
+          <figure>
+            <p>Dennis' Retreat</p>
+            <a
+              href="https://www.abc.net.au/news/2015-03-21/sergeant-andrew-duggan-good-to-know-public-supportive/6338038"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dennis' Retreat Homepage"
+            >
+              <img
+                src="https://live-production.wcms.abc-cdn.net.au/72718b0bb9337e567d4dac28a31a056e?impolicy=wcms_crop_resize&cropH=845&cropW=1500&xPos=0&yPos=72&width=862&height=485"
+                alt="Dennis' Retreat Homepage"
+              />
+            </a>
+          </figure>
+        </div>
+      </article>
+      <article>
+        <h2>Interests</h2>
+        <div class="boxed">
+          <p>Making life better for my disabled stepchildren</p>
+          <p>Gaming</p>
+          <p>Shooting / Archery</p>
+        </div>
+      </article>
     </section>
     <footer>
-        <p>© 2021 Tickit Solutions Pty Ltd</p>
-      </footer>
-</body>
-
+      <p>© 2021 Tick It Business Solutions Pty Ltd</p>
+    </footer>
+  </body>
 </html>

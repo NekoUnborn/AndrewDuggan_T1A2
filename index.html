@@ -7,47 +7,51 @@
     <title>Andrew's Page</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <!-- the header will contain the bars icon for the extended navbar until the javascript can be added -->
     <header>
-      <article>
-        <div id="menubars">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </article>
+      <div id="menubars">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav>
         <ul class="navbar">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="myblog.html">My Blogs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="index.html" aria-label="This Page">Home</a>
+          </li>
+          <li>
+            <a href="aboutme.html" aria-label="About Me Page">About Me</a>
+          </li>
+          <li><a href="myblog.html" aria-label="My Blog Page">My Blogs</a></li>
+          <li>
+            <a href="contact.html" aria-label="Contact Me Page">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <div class="main">
-      <div id="intro">
-        <h1>Hello, I am Andrew Duggan</h1>
+    <!-- the whole Main Body section is min VH flexbox -->
+    <div class="main" id="homepage">
+      <!-- Each subsection has its own flexbox for ease of movement -->
+      <article id="intro">
+        <h2>Hello, I am Andrew Duggan</h2>
         <p>
+          
           I am a junior coder that enjoys creating highly accessible websites
         </p>
         <p>
-          I am currently working for TickIt Solutions Pty Ltd as the lead IT
-          developer
+          I am currently working for Tick It Business Solutions Pty Ltd as the
+          IT manager
         </p>
-      </div>
+      </article>
       <img
-      id="myimagebackground"
-      src="images/AndrewDuggan_image.jpg"
-      alt="Photo of Andrew Duggan"
-      max-height="calc(100vh-80px)"
-    />
-
+        id="myimagebackground"
+        src="./images/AndrewDuggan_image.jpg"
+        alt="Photo of Andrew Duggan"
+      />
     </div>
     <footer>
-      <p>© 2021 Tickit Solutions Pty Ltd</p>
+      <p>© 2021 Tick It Business Solutions Pty Ltd</p>
     </footer>
   </body>
 </html>

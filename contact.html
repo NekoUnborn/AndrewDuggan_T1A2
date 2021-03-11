@@ -7,44 +7,65 @@
     <title>Andrew's Page</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <!-- the header will contain the bars icon for the extended navbar until the javascript can be added -->
     <header>
-      <article>
         <div id="menubars">
           <div></div>
           <div></div>
           <div></div>
         </div>
-      </article>
       <nav>
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="myblog.html">My Blogs</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="index.html" aria-label="Homepage">Home</a></li>
+          <li>
+            <a href="aboutme.html" aria-label="About Me Page">About Me</a>
+          </li>
+          <li><a href="myblog.html" aria-label="My Blog Page">My Blogs</a></li>
+          <li>
+            <a class="active" href="contact.html" aria-label="This Page"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
+    <!-- the whole Main Body section is full VH flexbox -->
     <section class="main">
-      <image>
-        <a href="https://www.linkedin.com/in/andrewduggan42">
-        <img class="logo" src="./images/Linkedin logo.png" alt="linkedin logo">
-      </a>
-      </image>
-      <image>
-        <a href="https://twitter.com/AndrewD52491622">
-        <img class="logo" src="./images/twitter.png" alt="twitter logo">
-      </a>
-      </image>      <image>
-        <a href="https://github.com/NekoUnborn">
-        <img class="logo" src="./images/github.png" alt="linkedin logo">
-      </a>
-      </image>
+      <!-- Each subsection has its own flexbox for ease of movement -->
+      <figure>
+        <a
+          href="https://www.linkedin.com/in/andrewduggan42"
+          aria-label="Andrew on LinkedIn"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src="./images/Linkedin.png" alt="linkedin logo" />
+        </a>
+      </figure>
+      <figure>
+        <a
+          href="https://twitter.com/AndrewD52491622"
+          aria-label="Andrew on Twitter"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src="./images/twitter.png" alt="twitter logo" />
+        </a>
+      </figure>
+      <figure>
+        <a
+          href="https://github.com/NekoUnborn"
+          aria-label="Andrew on Github"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src="./images/github.png" alt="linkedin logo" />
+        </a>
+      </figure>
     </section>
     <footer>
-      <p>© 2021 Tickit Solutions Pty Ltd</p>
+      <p>© 2021 Tick It Business Solutions Pty Ltd</p>
     </footer>
   </body>
 </html>

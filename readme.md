@@ -21,7 +21,7 @@ https://www.
 
 **- Target audience**
 
-    prospective clients
+    prospective clients / employers
 
 **- Tech stack**
 
