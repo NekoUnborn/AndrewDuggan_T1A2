@@ -1,71 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes menu {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-* {
-  margin: 0px;
-}
-
-body {
-  display: flex;
-  min-height: calc(100vh - 80px);
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  background-color: #c8c8c8;
-  margin: 40px 0px 40px 0px;
-}
-
-/* header floats on the top of the screen */
-header {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  height: 40px;
-  background-color: red;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* footer floats on the bottom of the screen */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(199, 199, 199);
-  font-size: 0.75em;
-}
 h1 {
   font-size: 3em;
   text-align: center;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   text-align: center;
   margin: 1em;
 }
@@ -75,97 +15,21 @@ p {
   font-size: 1.5em;
   padding: 0.5rem;
 }
-a:hover {
-  animation: pulse linear 2s infinite;
-}
-
-/* This script creates the menu icon */
-#menubars {
-  display: inline-block;
-  cursor: pointer;
-}
-#menubars div {
-  width: 35px;
-  height: 5px;
-  margin: 6px 0;
-  background-color: black;
-  transition: 0.4s;
-}
-/* This code turns the menu icon 90deg when in preparation for javascript */
-#menubars:hover {
-  animation: menu 1s;
-  animation-fill-mode: forwards;
-}
-
-/* This creates the navbar styling */
-.navbar {
-  background-color: red;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  height: 40px;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.25em;
-}
-.navbar li {
-  display: inline;
-  list-style: none;
-}
-/* This is to turn the navbar link Blood Red on the page has been visited */
-.navbar li a:link,
-.navbar li a:visited {
-  color: rgb(100, 0, 0);
-  text-decoration: none;
-}
-.navbar li a:hover {
-  animation: pulse linear 0.5s infinite;
-}
-
-/* Enlarges the active page text in the navbar*/
-.active {
-  font-size: 150%;
-  color: black;
-}
-
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.boxed {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 5px 5px 0.25px rgba(0, 0, 0, 0.25);
-  justify-content: center;
-  align-items: center;
-  margin: 0px 5px 0px 5px;
-  margin-bottom: 1em;
-  z-index: -1;
-}
 /* Add a card effect for articles */
 .blog {
   display: grid;
   background-color: white;
   padding: 20px;
-  margin-top: 20px;
+  margin: 5px;
   max-width: 300px;
 }
 .blog img {
   max-width: 290px;
 }
-
 #intro {
   font-family: "Akaya Telivigala", cursive;
   max-width: 300px;
 }
-
 #myimagebackground {
   position: absolute;
   max-width: 540px;
@@ -174,7 +38,6 @@ a:hover {
   opacity: 30%;
   justify-self: center;
   max-height: calc(100vh - 80px)
-
 }
 
 #myimage {
@@ -191,8 +54,13 @@ a:hover {
   width: fit-content;
   padding: 0.5rem;
 }
-#blogpage {
-  flex-direction: column;
+#myblogs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
 }
 #projects {
   flex-direction: row;
@@ -203,48 +71,4 @@ a:hover {
 #projects img {
   width: 300px;
   height: auto;
-}
-
-/* Tablets */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  footer {
-    font-size: 1em;
-  }
-  #homepage {
-    flex-direction: row;
-  }
-  #intro {
-    font-size: 0.95em;
-  }
-  #myimagebackground {
-    position: initial;
-    max-width: 300px;
-    width: 300px;
-    margin: 0 auto;
-    opacity: 100%;
-    justify-self: center;
-  }
-}
-
-/* PC */
-@media only screen and (min-width: 961px) {
-  footer {
-    font-size: 1em;
-  }
-  #homepage {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  #intro {
-    font-size: 1.5em;
-    max-width: 400px;
-  }
-  #myimagebackground {
-    position: relative;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    opacity: 100%;
-    justify-self: center;
-  }
 }
