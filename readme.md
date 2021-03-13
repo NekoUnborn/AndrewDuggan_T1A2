@@ -18,14 +18,14 @@ The aim of this website is to act as an online CV to prospective clients and emp
 
 **-- Sitemap**
 
-![Site Map](../images/sitemap.png)
+![Site Map](./docs/sitemap.png)
 
 **-- Screenshots**
 
-![Homepage](../images/homepage.png)
-![About Me](../images/aboutme.png)
-![My Blog](../images/myblog.png)
-![Contact](../images/contact.png)
+![Homepage](./docs/homepage.png)
+![About Me](./docs/aboutme.png)
+![My Blog](./docs/myblog.png)
+![Contact](./docs/contact.png)
 
 
 **-- Target audience**
