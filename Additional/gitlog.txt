@@ -1,0 +1,47 @@
+commit f4faf26abc5cccdd68f4c646ce6d6501de51d331
+Author: neko <neko@LAPTOP-V5T2GBSE.localdomain>
+Date:   Fri Mar 12 21:39:24 2021 +1000
+
+    Added SRI
+
+commit 2b2fa222fe9298bdb67f7ff80e56d23d7c2a0f95
+Author: neko <neko@LAPTOP-V5T2GBSE.localdomain>
+Date:   Fri Mar 12 08:17:12 2021 +1000
+
+    finished basic website
+
+commit 2b6842b50d6780a99f6f518e3a27bc9747f0de3c
+Author: neko <neko@LAPTOP-V5T2GBSE.localdomain>
+Date:   Tue Mar 9 16:41:31 2021 +1000
+
+    added more styling
+
+commit 2084ffca39b2b5e9f68fe917715f115c0c7f5803
+Author: Neko <andrew@tickit.com.au>
+Date:   Mon Mar 8 16:42:24 2021 +1000
+
+    Hamburger added
+
+commit 5f0f2dcdc092ff274ab38c9bd930b740881036c9
+Author: Neko <andrew@tickit.com.au>
+Date:   Mon Mar 8 14:52:26 2021 +1000
+
+    added more
+
+commit 0f103444b8b32ec76910be4dbbe0523b16a6510f
+Author: Neko <andrew@tickit.com.au>
+Date:   Mon Mar 8 10:02:28 2021 +1000
+
+    It's been a while
+
+commit 07e757af3ca253d549eb262f30332617ed87986c
+Author: Neko <andrew@tickit.com.au>
+Date:   Sat Mar 6 12:47:13 2021 +1000
+
+    Next backup
+
+commit 7632b18057697b330e57f724e63049d28f130ef8
+Author: Neko <andrew@tickit.com.au>
+Date:   Wed Mar 3 15:37:49 2021 +1000
+
+    Basic structures

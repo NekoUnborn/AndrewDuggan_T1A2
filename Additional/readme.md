@@ -1,28 +1,37 @@
 ***Link to published portfolio website***
 
-https://www.
+https://happy-hodgkin-14c4a7.netlify.app
 
 ***Description of portfolio website***:
-**- purpose**
 
-**- Functionality / features**
+**-- purpose**
 
-**- Sitemap**
+The aim of this website is to act as an online CV to prospective clients and employers
 
--- image
+**-- Functionality / features**
 
-**- Screenshots**
-
--- image homepage
--- image aboutme
--- image myhistory
--- image myblog
+-The website consists of multiple emenents to conform with Screen Reader requirements.
+-The active links pulse when hovered over to catch the eye and indicate that they can be clicked on.
+-The content shifts position depending on the size of the screen
+-The hamburger rotates on hover in preparation for the addition of JAVASCRIPT collapsable menu.
 
 
-**- Target audience**
+**-- Sitemap**
+
+![Site Map](../images/sitemap.png)
+
+**-- Screenshots**
+
+![Homepage](../images/homepage.png)
+![About Me](../images/aboutme.png)
+![My Blog](../images/myblog.png)
+![Contact](../images/contact.png)
+
+
+**-- Target audience**
 
     prospective clients / employers
 
-**- Tech stack**
+**-- Tech stack**
 
     html css
